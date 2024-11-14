@@ -1,0 +1,61 @@
+@font-face{
+    font-family: Grotesk;
+    src: url('../fonts/VarentGrotesk-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(233, 233, 233);
+}
+
+h1,
+h2{
+    font-family: Grotesk;
+    font-size: 6rem;
+    color: rgb(41, 2, 219);
+}
+
+a{
+    text-decoration: inherit;  
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    & h1{
+        padding: 1rem;
+        z-index: 2;
+    }
+
+    & img{
+        position: absolute;
+        z-index: 1;
+        height: 15rem;
+        top: 10%;
+        left: 10%;
+    }
+
+    & a{
+        z-index: 2;
+        font-size: 3.5rem;
+    }
+}
+
+.intro{
+    z-index: 2;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 1.7rem; 
+}
