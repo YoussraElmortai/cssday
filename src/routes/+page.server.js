@@ -1,10 +1,10 @@
-export const load = async () =>{
-    const fetchData = async () =>{
-        const res = await fetch ("https://cssday.nl/data.json")
-        const data = await res.json()
-        return data.results
-    }
-     return{
-        data: fetchData(),
-    }
-}
+export const load = async ({ fetch }) => {
+    const response = await fetch('https://cssday.nl/data.json');
+    const data = await response.json();
+
+    // console.log(data);
+
+    return {
+        data
+    };
+};

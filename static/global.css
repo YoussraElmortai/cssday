@@ -36,8 +36,6 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100vw;
     overflow: hidden;
 
     & h1 {
@@ -45,19 +43,29 @@ main {
         font-size: 6rem;
         z-index: 2;
     }
-
-    & img {
-        position: absolute;
-        z-index: 1;
-        height: 15rem;
-        top: 10%;
-        left: 10%;
-    }
 }
 
 .intro {
     z-index: 2;
     padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
     font-weight: bold;
     font-size: 1.7rem;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.card{
+    position: relative;
+    width: 16rem;
+    height: 10rem;
+    padding: 1rem;
+    border:  solid 2px;
 }
