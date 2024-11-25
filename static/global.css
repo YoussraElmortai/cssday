@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: Grotesk;
-    src: url('../fonts/VarentGrotesk-Bold.otf');
+    src: url('/src/fonts/VarentGrotesk-Bold.otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -60,30 +60,4 @@ main {
     padding: 0.5rem 1rem;
     font-weight: bold;
     font-size: 1.7rem;
-}
-
-.stackedCards {
-    display: flex;
-    text-align: center;
-    flex-flow: column;
-    gap: 0.5rem;
-    width: 100vw;
-    margin-bottom: 2rem;
-}
-
-.card {
-    position: relative;
-    border-top: solid var(--accent) 0.1rem;
-
-    & h2{
-        padding-top: 1rem;
-    }
-    
-    & a{
-        color: white;
-        background: var(--accent);
-        padding: 0.5rem;
-        position: absolute;
-        opacity: 0;
-    }
 }
