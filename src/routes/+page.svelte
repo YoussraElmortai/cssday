@@ -20,7 +20,7 @@
     {#each Object.entries(data.data) as [year, event]}
       <div class="card" style="border-color: {event.color.hex};">
         <a href={event.link}>
-          <h2 style="color: {event.color.hex};">{event.title}</h2>
+          <h2>{event.title}</h2>
           <h3>Attendees: {event.attendees.count}</h3>
           <!-- <div class="mc">
             {#each event.mc as mc}

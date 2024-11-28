@@ -65,7 +65,7 @@ main {
 .card{
     position: relative;
     width: 16rem;
-    height: 10rem;
+    height: 5rem;
     padding: 1rem;
-    border:  solid 2px;
+    border-top: 0.5rem solid;
 }
