@@ -53,19 +53,13 @@ main {
     font-size: 1.7rem;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    padding: 1rem;
 }
 
-.card{
-    position: relative;
-    width: 16rem;
-    height: 5rem;
-    padding: 1rem;
-    border-top: 0.5rem solid;
+.cssday {
+    height: 100vh;
+    padding: 1rem 0.5rem;
 }

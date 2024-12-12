@@ -18,11 +18,17 @@
   </div>
 
   <section class="wrapper">
-    <!-- {#each Object.entries(data.data) as [year, event]}
-      <div class="card" style="border-color: {event.color.hex};">
-        <a href={event.link}>
+    {#each Object.entries(data.data) as [year, event]}
+      <div class="cssday {year}" style="border-color: {event.color.hex};">
           <h2>{event.title}</h2>
+                     <div class="info">
           <h3>Attendees: {event.attendees.count}</h3>
+                    <ul>
+                    {#each event.countries as country}
+                <li>{country} </li>
+            {/each}
+            </ul>
+            </div>
           <div class="mc">
             {#each event.mc as mc}
               {#if mc.avatar}
@@ -30,9 +36,9 @@
               {/if}
             {/each}
           </div>
-        </a>
+<a href={event.link}>go to website</a>
       </div>
-    {/each} -->
+    {/each}
   </section>
 </main>
 
