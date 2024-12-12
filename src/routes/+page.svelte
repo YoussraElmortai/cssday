@@ -17,8 +17,8 @@
     <p>A decade of geeking out over <span>CSS</span></p>
   </div>
 
-  <!-- <section class="wrapper">
-    {#each Object.entries(data.data) as [year, event]}
+  <section class="wrapper">
+    <!-- {#each Object.entries(data.data) as [year, event]}
       <div class="card" style="border-color: {event.color.hex};">
         <a href={event.link}>
           <h2>{event.title}</h2>
@@ -32,8 +32,8 @@
           </div>
         </a>
       </div>
-    {/each}
-  </section> -->
+    {/each} -->
+  </section>
 </main>
 
 <footer></footer>
