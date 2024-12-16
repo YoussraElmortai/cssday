@@ -1,5 +1,5 @@
 :root {
-    --background: #e9e9e9;
+    --background: #dfdfe6;
     --text-color: #020202;
     --accent: #2a0abc;
     --headings: Grotesk;
@@ -39,27 +39,48 @@ main {
     overflow: hidden;
 
     & h1 {
-        padding: 1rem;
-        font-size: 6rem;
-        z-index: 2;
+        font-size: 5rem;
     }
 }
 
 .intro {
-    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height: 100vh;
     padding: 0.5rem 1rem;
     margin-bottom: 2rem;
-    font-weight: bold;
-    font-size: 1.7rem;
+
+    & .button{
+        flex-flow: row-reverse;
+    }
+
+    & article{
+        display: flex;
+        flex-flow: column;
+        gap: 1.5rem;
+
+    }
+}
+
+.text{
+
+}
+
+.button{
+    display: flex;
+    padding-right: 1.5rem;
+
+    & a{
+        background: var(--accent);
+        padding: 0.5rem 1rem;
+        color: var(--background);
+        border-radius: 1.5rem;
+    }
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-}
-
-.cssday {
-    height: 100vh;
-    padding: 1rem 0.5rem;
 }
