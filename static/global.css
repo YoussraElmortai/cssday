@@ -47,7 +47,6 @@ main {
     display: flex;
     justify-content: space-between;
     flex-flow: column;
-    height: 100vh;
     padding: 0.5rem 1rem;
     margin-bottom: 2rem;
 
@@ -63,9 +62,6 @@ main {
     }
 }
 
-.text{
-
-}
 
 .button{
     display: flex;

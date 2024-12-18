@@ -7,15 +7,16 @@
 </header>
 
 <main>
-  <!-- <img src="/src/public/audience.jpg" alt="" >
+
+  
+  <div class="intro">
+  <h1>10 years of CSS day</h1>
+    <img src="/src/public/audience.jpg" alt="" >
     <img src="/src/public/cssdayinterview.jpg" alt="">
     <img src="/src/public/helpdesk.jpg" alt="">
     <img src="/src/public/jheyhas.jpg" alt="" >
     <img src="/src/public/stephenhaytalk.jpg" alt="" >
-    <img src="/src/public/unatalk.jpg" alt="" > -->
-  
-  <div class="intro">
-  <h1>10 years of CSS day</h1>
+    <img src="/src/public/unatalk.jpg" alt="" >
   <article>
     <h2>A decade of geeking out over CSS</h2>
     <p class="text">CSS Day is a focused, advanced CSS conference. Our attendees and speakers are a mix of CSS designers, developers, spec writers and browser vendors, who take pride in what they know and do.</p>
@@ -26,7 +27,7 @@
 
   </div>
 
-  <section class="wrapper">
+  <!-- <section class="wrapper">
     {#each Object.entries(data.data) as [year, event]}
       <div class="cssday {year}">
          <div class="info">
@@ -46,7 +47,7 @@
 </div>
       </div>
     {/each}
-  </section>
+  </section> -->
 </main>
 
 <footer></footer>
